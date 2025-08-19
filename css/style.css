@@ -202,3 +202,174 @@ footer a { text-decoration: none; }
         height: 45px;
     }
 }
+
+/* --- ESTILOS ADICIONAIS PARA O PORTAL DO ASSOCIADO --- */
+
+/* PÁGINA DE LOGIN */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--light-bg);
+}
+body.dark-mode .login-container {
+    background-color: var(--dark-bg);
+}
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--card-bg-light);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color-light);
+}
+body.dark-mode .login-card {
+    background-color: var(--card-bg-dark);
+    border: 1px solid var(--border-color-dark);
+}
+.login-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+body.dark-mode .login-card a {
+    color: var(--accent-color);
+}
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* LAYOUT DO DASHBOARD */
+.dashboard-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* SIDEBAR */
+.dashboard-sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s;
+    min-height: 100vh;
+}
+.dashboard-sidebar .sidebar-header {
+    background: var(--secondary-color);
+}
+.dashboard-sidebar ul.components {
+    padding: 20px 0;
+}
+.dashboard-sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+.dashboard-sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: rgba(255,255,255,0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.dashboard-sidebar ul li a:hover {
+    color: #fff;
+    background: var(--secondary-color);
+}
+.dashboard-sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: var(--secondary-color);
+}
+
+/* CONTEÚDO DO DASHBOARD */
+.dashboard-content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background-color: var(--light-bg);
+}
+body.dark-mode .dashboard-content {
+    background-color: var(--dark-bg);
+}
+.dashboard-header {
+    padding: 1.25rem 1.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color-light);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+body.dark-mode .dashboard-header {
+    background-color: var(--card-bg-dark);
+    border-bottom: 1px solid var(--border-color-dark);
+}
+.dashboard-header h5 {
+    color: var(--text-color-light);
+}
+body.dark-mode .dashboard-header h5 {
+    color: var(--text-color-dark);
+}
+
+/* Responsividade do Dashboard */
+@media (max-width: 768px) {
+    .dashboard-sidebar {
+        position: fixed;
+        z-index: 1050;
+        margin-left: -250px; /* Esconde a sidebar por padrão */
+    }
+    .dashboard-sidebar.active {
+        margin-left: 0;
+    }
+    /* Adicionar um botão para toggle a sidebar seria o próximo passo */
+}
+
+/* --- REFINAMENTOS DO MODO ESCURO --- */
+
+/* Garante que os botões de outline tenham bom contraste no modo escuro */
+body.dark-mode .btn-outline-primary {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+}
+
+body.dark-mode .btn-outline-danger {
+    color: #ff7b72;
+    border-color: #ff7b72;
+}
+body.dark-mode .btn-outline-danger:hover {
+    background-color: #ff7b72;
+    color: var(--dark-bg);
+}
+
+body.dark-mode .btn-outline-light {
+    color: #f0f6fc;
+    border-color: #f0f6fc;
+}
+body.dark-mode .btn-outline-light:hover {
+    background-color: #f0f6fc;
+    color: var(--dark-bg);
+}
+
+/* Melhora a legibilidade dos links no rodapé do modo escuro */
+body.dark-mode footer a {
+    color: rgba(255,255,255,0.8) !important;
+}
+body.dark-mode footer a:hover {
+    color: #fff !important;
+}
+
+/* Ajusta a cor do texto do header do dashboard no modo escuro */
+body.dark-mode .dashboard-header h5 {
+    color: var(--text-color-dark);
+}
+
+/* Ajusta a cor do texto da lista de dependentes no modo escuro */
+body.dark-mode .list-group-item {
+    color: var(--text-color-dark);
+}
+body.dark-mode .list-group-item .text-muted {
+    color: rgba(201, 209, 217, 0.7) !important;
+}

@@ -102,3 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+/* --- SCRIPTS ADICIONAIS PARA O PORTAL DO ASSOCIADO --- */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const addDependenteBtn = document.getElementById('add-dependente-btn');
+    if (addDependenteBtn) {
+        addDependenteBtn.addEventListener('click', function() {
+            // Futuramente, este botão pode abrir um modal para adicionar dependentes.
+            // Por enquanto, exibimos um alerta como placeholder.
+            alert('Funcionalidade de adicionar dependente a ser implementada.');
+        });
+    }
+});

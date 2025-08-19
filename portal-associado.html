@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Associado - ASFUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <!-- SIDEBAR -->
+        <nav class="dashboard-sidebar">
+            <div class="sidebar-header text-center py-4">
+                <a href="index.html">
+                    <img src="https://placehold.co/150x50/FFFFFF/003366?text=ASFUS" alt="Logo ASFUS">
+                </a>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#"><i class="bi bi-house-door-fill me-2"></i> Início do Portal</a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-people-fill me-2"></i> Meus Dependentes</a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-calendar-check-fill me-2"></i> Reservas</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- PAGE CONTENT -->
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Bem-vindo(a), Carlos Souza</h5>
+                    <a href="index.html" class="btn btn-outline-light">Sair <i class="bi bi-box-arrow-right ms-1"></i></a>
+                </div>
+            </header>
+
+            <main class="p-4">
+                <!-- SEÇÃO MEUS DEPENDENTES -->
+                <section id="dependentes" class="mb-5">
+                    <h2 class="mb-4">Gerenciamento de Dependentes</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Maria Eduarda Souza</strong><br>
+                                        <small class="text-muted">Parentesco: Filha</small>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline-danger">Remover</button>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Joana Pereira Souza</strong><br>
+                                        <small class="text-muted">Parentesco: Cônjuge</small>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline-danger">Remover</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button id="add-dependente-btn" class="btn btn-primary"><i class="bi bi-plus-circle me-1"></i> Adicionar Novo Dependente</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SEÇÃO RESERVAS -->
+                <section id="reservas">
+                    <h2 class="mb-4">Reservas de Espaços e Serviços</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-building me-2"></i>Reserva do Salão de Festas</h5>
+                                    <p class="card-text">Consulte as datas disponíveis e faça a reserva do nosso salão de festas para seu evento.</p>
+                                    <a href="#" class="btn btn-primary">Verificar Disponibilidade</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-trophy me-2"></i>Inscrição no Campeonato</h5>
+                                    <p class="card-text">Inscreva sua equipe no campeonato de futebol anual da associação e participe.</p>
+                                    <a href="#" class="btn btn-primary">Inscrever Equipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
