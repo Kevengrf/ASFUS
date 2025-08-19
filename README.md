@@ -23,7 +23,7 @@
   Setup e Instalação
 
    1. Clone o repositório:
-   1     git clone [URL_DO_REPOSITORIO]
+   1     git clone (https://github.com/Kevengrf/ASFUS.git)
 
    2. Navegue até a pasta do projeto e instale as dependências do backend:
    1     cd suap
