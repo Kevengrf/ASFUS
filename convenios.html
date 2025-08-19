@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios e Convênios - ASFUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://placehold.co/150x50/003366/FFFFFF?text=ASFUS" alt="Logo ASFUS">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Notícias e Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="convenios.html">Benefícios e Convênios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="associe-se.html">Seja um Associado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="page-header text-center mb-5">
+                <h1>Nossos Benefícios e Convênios</h1>
+                <p class="lead">Aproveite a nossa rede de parceiros e economize.</p>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group" aria-label="Filtros de Categoria de Convênios">
+                    <button type="button" class="btn btn-outline-primary filter-btn-convenios active" data-filter="all">Todos</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn-convenios" data-filter="saude">Saúde</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn-convenios" data-filter="educacao">Educação</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn-convenios" data-filter="lazer">Lazer</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn-convenios" data-filter="alimentacao">Alimentação</button>
+                </div>
+            </div>
+
+            <!-- PARTNERS GRID -->
+            <section class="partners-grid">
+                <div class="row">
+                    <!-- Partner 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="saude">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/0055A4/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Clínica Sorriso Feliz</h5>
+                                <p class="card-text text-muted">Saúde</p>
+                                <p>25% de desconto em todos os tratamentos odontológicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="educacao">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/D40000/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Universidade do Saber</h5>
+                                <p class="card-text text-muted">Educação</p>
+                                <p>Bolsas de 30% para cursos de graduação e pós-graduação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="lazer">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/009639/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Cinema Cineplex</h5>
+                                <p class="card-text text-muted">Lazer</p>
+                                <p>Ingressos com 50% de desconto de segunda a quarta-feira.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner 4 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="alimentacao">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/FF7F00/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Restaurante Sabor do Porto</h5>
+                                <p class="card-text text-muted">Alimentação</p>
+                                <p>15% de desconto no buffet livre todos os dias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner 5 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="saude">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/0055A4/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Academia Corpo em Ação</h5>
+                                <p class="card-text text-muted">Saúde</p>
+                                <p>Isenção de matrícula e 20% de desconto na mensalidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner 6 -->
+                    <div class="col-md-6 col-lg-4 mb-4 partner-item" data-category="educacao">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <img src="https://placehold.co/100x100/D40000/FFFFFF?text=Logo" class="rounded-circle mb-3" alt="Logo Parceiro">
+                                <h5 class="card-title">Escola de Idiomas Global</h5>
+                                <p class="card-text text-muted">Educação</p>
+                                <p>40% de desconto em todos os cursos de inglês e espanhol.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <button id="accessibility-btn" class="btn btn-primary mb-2" title="Aumentar Fonte">
+            <i class="bi bi-universal-access"></i>
+        </button>
+        <button id="dark-mode-toggle" class="btn btn-primary" title="Alternar Modo Escuro">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">ASFUS</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p>
+                        Associação dos Funcionários de Suape, trabalhando para o bem-estar e a união dos nossos associados desde 1998.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Links Úteis</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><a href="quem-somos.html" class="text-white">Quem Somos</a></p>
+                    <p><a href="associe-se.html" class="text-white">Seja um Associado</a></p>
+                    <p><a href="noticias.html" class="text-white">Notícias</a></p>
+                    <p><a href="contato.html" class="text-white">Ajuda</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold">Contato</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><i class="bi bi-geo-alt-fill me-3"></i> Rodovia PE-60, s/n, Suape, PE</p>
+                    <p><i class="bi bi-envelope-fill me-3"></i> contato@asfus.com.br</p>
+                    <p><i class="bi bi-telephone-fill me-3"></i> +55 81 1234-5678</p>
+                </div>
+                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Siga-nos</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+            <a class="text-white" href="index.html">asfus.com.br</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

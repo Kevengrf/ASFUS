@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias e Eventos - ASFUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://placehold.co/150x50/003366/FFFFFF?text=ASFUS" alt="Logo ASFUS">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="noticias.html">Notícias e Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="convenios.html">Benefícios e Convênios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="associe-se.html">Seja um Associado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="page-header text-center mb-5">
+                <h1>Notícias e Eventos</h1>
+                <p class="lead">Fique por dentro de tudo que acontece na nossa associação.</p>
+            </div>
+
+            <!-- FILTERS AND SEARCH -->
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="btn-group" role="group" aria-label="Filtros de Categoria">
+                        <button type="button" class="btn btn-outline-primary filter-btn active" data-filter="all">Todos</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="comunicados">Comunicados</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="eventos">Eventos</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="geral">Geral</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar notícias...">
+                        <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEWS GRID -->
+            <section class="news-grid">
+                <div class="row">
+                    <!-- Item 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="eventos">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Evento" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Eventos</span>
+                                <h5 class="card-title">Confraternização Anual 2025</h5>
+                                <p class="card-text">Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="comunicados">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Comunicado" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Comunicados</span>
+                                <h5 class="card-title">Aviso de Manutenção na Sede</h5>
+                                <p class="card-text">Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="geral">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Geral" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-2">Geral</span>
+                                <h5 class="card-title">Novas Regras para Uso do Clube</h5>
+                                <p class="card-text">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="eventos">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Esporte" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Eventos</span>
+                                <h5 class="card-title">Torneio Esportivo de Suape</h5>
+                                <p class="card-text">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="geral">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Saúde" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-2">Geral</span>
+                                <h5 class="card-title">Campanha de Vacinação Contra a Gripe</h5>
+                                <p class="card-text">Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="col-md-6 col-lg-4 mb-4 news-item" data-category="comunicados">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x400/DDDDDD/333333?text=Eleições" class="card-img-top" alt="Imagem da notícia">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Comunicados</span>
+                                <h5 class="card-title">Edital de Convocação para Eleições</h5>
+                                <p class="card-text">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in.</p>
+                                <a href="#" class="btn btn-outline-primary">Leia Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHOTO GALLERY -->
+            <section class="photo-gallery py-5 mt-5 bg-light rounded">
+                <div class="container">
+                    <h2 class="text-center mb-5">Galeria de Fotos</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <a href="https://placehold.co/1200x800/CCCCCC/FFFFFF?text=Confraternização" data-toggle="lightbox">
+                                <img src="https://placehold.co/600x400/CCCCCC/FFFFFF?text=Confraternização" alt="Confraternização Anual" class="img-fluid rounded shadow-sm">
+                                <div class="gallery-caption">Confraternização Anual</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                             <a href="https://placehold.co/1200x800/CCCCCC/FFFFFF?text=Torneio" data-toggle="lightbox">
+                                <img src="https://placehold.co/600x400/CCCCCC/FFFFFF?text=Torneio" alt="Torneio Esportivo" class="img-fluid rounded shadow-sm">
+                                <div class="gallery-caption">Torneio Esportivo</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                             <a href="https://placehold.co/1200x800/CCCCCC/FFFFFF?text=Festa" data-toggle="lightbox">
+                                <img src="https://placehold.co/600x400/CCCCCC/FFFFFF?text=Festa" alt="Festa Junina" class="img-fluid rounded shadow-sm">
+                                <div class="gallery-caption">Festa Junina</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <button id="accessibility-btn" class="btn btn-primary mb-2" title="Aumentar Fonte">
+            <i class="bi bi-universal-access"></i>
+        </button>
+        <button id="dark-mode-toggle" class="btn btn-primary" title="Alternar Modo Escuro">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">ASFUS</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p>
+                        Associação dos Funcionários de Suape, trabalhando para o bem-estar e a união dos nossos associados desde 1998.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Links Úteis</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><a href="quem-somos.html" class="text-white">Quem Somos</a></p>
+                    <p><a href="associe-se.html" class="text-white">Seja um Associado</a></p>
+                    <p><a href="noticias.html" class="text-white">Notícias</a></p>
+                    <p><a href="contato.html" class="text-white">Ajuda</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold">Contato</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><i class="bi bi-geo-alt-fill me-3"></i> Rodovia PE-60, s/n, Suape, PE</p>
+                    <p><i class="bi bi-envelope-fill me-3"></i> contato@asfus.com.br</p>
+                    <p><i class="bi bi-telephone-fill me-3"></i> +55 81 1234-5678</p>
+                </div>
+                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Siga-nos</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+            <a class="text-white" href="index.html">asfus.com.br</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

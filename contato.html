@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - ASFUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://placehold.co/150x50/003366/FFFFFF?text=ASFUS" alt="Logo ASFUS">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Notícias e Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="convenios.html">Benefícios e Convênios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="associe-se.html">Seja um Associado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="page-header text-center mb-5">
+                <h1>Fale Conosco</h1>
+                <p class="lead">Tem alguma dúvida, sugestão ou reclamação? Entre em contato conosco.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <h3>Informações de Contato</h3>
+                    <p>Estamos à disposição para atendê-lo. Visite-nos, ligue ou envie um e-mail.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                            <strong>Endereço:</strong> Rodovia PE-60, s/n, Edifício Sede, Suape, Ipojuca - PE, 55590-000
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-telephone-fill text-primary me-2"></i>
+                            <strong>Telefone:</strong> +55 (81) 1234-5678
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-envelope-fill text-primary me-2"></i>
+                            <strong>E-mail:</strong> contato@asfus.com.br
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-clock-fill text-primary me-2"></i>
+                            <strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 17h
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <h3>Envie uma Mensagem</h3>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="contactName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="contactName" required>
+                                <div class="invalid-feedback">Campo obrigatório.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contactEmail" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="contactEmail" required>
+                                <div class="invalid-feedback">Insira um e-mail válido.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="contactSubject" required>
+                            <div class="invalid-feedback">Campo obrigatório.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                            <div class="invalid-feedback">Campo obrigatório.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Nossa Localização</h3>
+                    <!-- Using a placeholder image for the map -->
+                    <img src="https://placehold.co/1200x400/EFEFEF/333333?text=Mapa+de+Localização" class="img-fluid rounded" alt="Mapa de Localização">
+                    <!-- Real implementation would be an iframe like this:
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.431170199268!2d-34.96688868521867!3d-8.25996199406593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae0d1a69d6c3b%3A0x4218993f5982e8cf!2sComplexo%20Industrial%20Portu%C3%A1rio%20de%20Suape!5e0!3m2!1spt-BR!2sbr!4v1678886456789!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <button id="accessibility-btn" class="btn btn-primary mb-2" title="Aumentar Fonte">
+            <i class="bi bi-universal-access"></i>
+        </button>
+        <button id="dark-mode-toggle" class="btn btn-primary" title="Alternar Modo Escuro">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">ASFUS</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p>
+                        Associação dos Funcionários de Suape, trabalhando para o bem-estar e a união dos nossos associados desde 1998.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Links Úteis</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><a href="quem-somos.html" class="text-white">Quem Somos</a></p>
+                    <p><a href="associe-se.html" class="text-white">Seja um Associado</a></p>
+                    <p><a href="noticias.html" class="text-white">Notícias</a></p>
+                    <p><a href="contato.html" class="text-white">Ajuda</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold">Contato</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <p><i class="bi bi-geo-alt-fill me-3"></i> Rodovia PE-60, s/n, Suape, PE</p>
+                    <p><i class="bi bi-envelope-fill me-3"></i> contato@asfus.com.br</p>
+                    <p><i class="bi bi-telephone-fill me-3"></i> +55 81 1234-5678</p>
+                </div>
+                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Siga-nos</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #0d6efd; height: 2px">
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-4 fs-4"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+            <a class="text-white" href="index.html">asfus.com.br</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
